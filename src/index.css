@@ -1,13 +1,333 @@
-body {
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tangerine:wght@700&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg: #000;
+  --bggary: #333536;
+  --red: #e00810;
+  --white: #ffffff;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bggary);
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 999;
+  padding: 5px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  top: 0;
+  width: 100%;
+
+}
+.header .header-content {
+ margin: 5px;
+ margin-top: -5px;
+}
+.header .header-content button {
+  border: none;
+  outline: none;
+  background-color: unset;
+}
+.header .header-content button img{
+  width: 120px;
+  margin-top: 7px;
+}
+.header .header-content button.sgn{
+  margin-top: 30px;
+  margin-right: 15px;
+  color: var(--white);
+  padding: 8px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: var(--red);
+  font-weight: 600;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar .img-bg img{
+  width: 100%;
+  height: 30em;
+  opacity: 0.2;
+}
+.navbar .img-bg{
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.navbar .img-content{
+  margin-top: -22em;
+}
+.navbar .img-content{
+   
+   position: relative;
+   flex-direction: column;
+   z-index: 1;
+   color: var(--white);
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+}
+.navbar .img-content .img-text{
+  filter: brightness(9);
+}
+.navbar .img-content .img-text .bigText{
+   font-size: 150%;                       
+   font-weight: 900;
+   padding: 8px;
+}
+.navbar .img-content .img-text .medText{
+   font-size: 100%;                               
+   font-weight: 600;
+   padding: 8px 25px;
+}
+.navbar .img-content .form{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+}
+.navbar .img-content .form input{
+  padding: 15px 12px;
+  background-color: unset;
+  border: 1px solid var(--bggary);
+  z-index: 1;
+  border-radius: 3px;
+ 
+}
+.navbar .img-content .form input.btn{
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  width: 40%;
+  margin: 15px auto;
+}
+.navbar .img-content .form input::placeholder{
+  color: #f4f4f4;
+  font-size: 15px;
+}
+.navbar .img-content .form input:focus{
+  color: var(--white);
+  font-weight: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body{
+  background-color: var(--bg);
+  color: var(--white);
+}
+.body .bodyCover{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: 10px;
+
+}
+.body .bodyCover .tv-text{
+  font-size: 15px;
+  padding: 10px;
+}
+.body .bodyCover .tv-text p.fn{
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin: 10px;
+
+}
+.body .bodyCover .tv-play img{
+  width: 100%;
+  padding: 15px 5px;
+}
+.body .covered{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 8px;
+  
+}
+.body .covered .navcover{
+   display: flex;
+   justify-content: space-between;
+   background-color: gray;
+   padding: 15px 12px;
+   text-align: center;
+}
+.body .covered .navcover button{
+  border: none;
+  outline: none;
+  background-color: unset;
+  
+}
+.body .covered .navcover button i{
+   color: #fff;
+   font-size: 17px;
+}
+.body .covered .coverbelow{
+  padding: 15px 12px;
+  background-color: var(--bggary);
+}
+.body .bodyCover.nt{
+   padding: 5px 0px 15px;
+}
+.body .form{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+}
+.body .form p{
+  text-align: center;
+}
+.body .form input{
+  padding: 15px 12px;
+  background-color: unset;
+  border: 1px solid var(--bggary);
+  z-index: 1;
+  border-radius: 3px;
+ 
+}
+.body .form input.btn{
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  width: 40%;
+  margin: 15px auto;
+}
+.body .form input::placeholder{
+  color: #f4f4f4;
+  font-size: 15px;
+}
+.body .form input:focus{
+  color: var(--white);
+  font-weight: 600;
+}
+.body .bodyCover .tv-text {
+  padding: 15px 0px;
+}
+.body .bodyCover .tv-text p.q{
+  color: gray;
+  text-decoration: underline;
+}
+.body .bodyCover .bottom {
+  margin: 10px 0px;
+}
+.body .bodyCover .bottom p{
+  padding: 8px 2px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: gray;
+}
+.body .bodyCover .globe{
+  margin: 10px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+.body .bodyCover .globe button{
+  padding: 10px 8px;
+  width: 30%;
+  color: var(--white);
+  border: 1px solid var(--bggary);
+  background-color: unset;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign{
+  background-color: var(--bg);
+ 
+  color: #fff;
+  
+}
+.sign img{
+  width: 30%;
+  margin-top: -8px;
+
+}
+.sign .form{
+
+  margin: 0px 10px;
+}
+.sign .form p.sn{
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.sign .form form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+.sign .form form input{
+  padding: 12px 12px;
+  margin: 6px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--bggary);
+  border: none;
+}
+.sign .form form input.btn{
+  background-color: var(--red);
+  color: #fff;
+  padding: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.sign .form form input:focus{
+  color: #fff;
+
+}
+.sign .form form input::placeholder{
+  color: gray;
+}
+.sign .form form .check{
+  display: flex;
+  color: gray;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.sign .form .ns .new{
+  margin: 10px;
+  display: flex;
+  padding: 5px;
+  font-size: 14px;
+  margin: 5px;
+}
+.sign .form .ns .goog{
+  margin: 10px;
+  font-size: 11px;
+  color: gray;
+}
+.sign .footer{
+  border-top: 1px solid gray;
+  padding: 10px 12px;
+  font-size: 13px;
+   margin-top: 60px;
+  color: gray;
+}
+.sign .footer .foot{
+  margin: 8px;
 }
